@@ -1,0 +1,246 @@
+Instructions on using TermTA's script language for creating macros.
+====================================================================
+
+  OK before I show you what's available in this script language, lets
+take a little lesson on how to write a macro.
+
+  A macro can send keypresses to the modem. By using a macro, you don't
+have to punch the keys in. Thus a macro can do things in TA that you
+normally doing by pushing keys on the keyboard.
+
+  Usually one uses a macro to save keystrokes and in general.. 
+make things easier. Candidates for macros are keystrokes you may do
+all the time.. Let's use drinking water since most of us have to type
+DR WAT all the type to quench our thirsts. Here is the macro for sending
+that command to the modem.. 
+
+{send DR WAT;}{}
+
+The ";" character tells TermTA to send an <ENTER> after the command.
+Simple, huh? Great, lets move on to other neat stuff...
+
+====================================================================
+                   !!!!!!!!  ABORT MACRO  !!!!!!!!
+
+There are going to be times you miscode a macro. Or perhaps line noise
+came in and interrupted the macro. Maybe you started the macro from the
+wrong place in your game. In any case, if you find yourself stuck in a
+macro, use the <ESC> key to get out of it.
+
+How will you know when you are stuck? The keyboard won't respond to your keypresses and the F7 button will be depressed.
+
+NOTE: Sometimes hitting < ESC > won't work the first time. Just hold down
+<ESC> until you exit.
+
+===================================================================
+                             VARIABLES
+
+There are 10 variables numbered %0 thru %9 that are available for your use.
+Variables %0 thru %3 are needed by TermTA to run effectively. So be careful
+if you change the contents of these variables. Variables %4 thru %9 are
+reserved for your use in your macros. Use these variables for storing of
+data. Useful when using loops and to save time typing.
+
+%4 - %9     Available for your use when writing your own macros.
+     %3     For use in a future version of Term-TA
+     %2     Contains the command needed for monitoring health
+              (HE, GR, or NONE)
+     %1     Contains name of monster when one is encounterd
+     %0     Contains name of the current map you are using. (use this
+              variable in a macro to switch between maps-can also
+              use F3 in TermTA to do this instead of a macro, your choice)
+
+When TermTA encounters these variables in your macro, it will check
+to see if the variable contains anything. If blank, you will be prompted
+for input, if the variable contains something, it will use that instead of
+prompting for input. (See the SET command on how to manipulate variables).
+
+==========================================================================
+                             OPERATORS
+     Operators perform logical operations on variables.
+
+=   Use to put a numeric value or text string into a variable.
+    Use to transfer the contents of one variable to another.
+    Syntax:  {Variable = Number/TextString/Variable}
+
+
+    Examples: {%4 = Hello}     Puts "Hello" into variable 4
+              {%5 = %1}        Copies contents of variable 1 to variable 5   
+
+==========================================================================
+                              LABELS
+
+Labels are used to branch back to a previous part of your macro. These
+are extremely helpful when coding a loop for your macro.
+
+The label can be any string of text you want, as long as you add a ":"
+to the beginning of your labels name. The following are all valid labels:
+
+{:again}  or {:A}
+
+As you can see, your label must be enclosed within a set of "{}" brackets.
+You can use upper or lowercase characters. You can have as many labels as
+you want in your macro as long as each label has it's own unique name.
+
+==========================================================================
+                          AVAILABLE commands
+
+1)  All commands must be enclosed within the {} characters.
+        EX:   {Command}
+
+2)  Commands must be entered with no spaces between the brackets.
+        EX:   {Command}{Command}    This is valid
+              {Command} {Command}   This is not valid
+
+3)  Commands can be entered in Upper or Lower case.
+
+------------------------------------------------------------------------
+BEEP     Makes a Beep sound. Great for use as an alarm.
+
+  Syntax:   {BEEP}
+------------------------------------------------------------------------
+DROPC    Drops carrier. Great for using as an escape from a deadly scene.
+
+  Syntax:   {DROPC}
+
+------------------------------------------------------------------------
+GOTO     Branches to another part of your macro. Excellent for creating
+         loops in your macros
+
+  Syntax:   {GOTO LabelName}
+
+Parameters:   LabelName
+
+                  where LabelName is the name of the label you want the
+                  macro to branch to. The macro then executes all of the
+                  commands following that label.
+
+SPECIAL NOTE:  LabelName MUST NOT be preceded with a ":". Also, LabelName
+is not case sensitive. Capitalization doesn't matter as long as the name
+is spelled correctly.
+
+  Example:   {:loop}{beep}{goto loop}
+             {:again}{set}{goto AGAIN}
+             {send ;}{}{:HERE}{SEND hello;}{}{GOTO here}
+
+------------------------------------------------------------------------
+POKE     This command is used to tell you if an invisible player is in
+         your room
+
+  Syntax:   {POKE}
+
+The Poke command will poke 9 consecutive letters of the alphabet. If an
+invisible player is in the room you get a "POKE!" message. If not you
+get a "Not Nearby" message. Poke does only 9 at a time because most all
+BBS's will give you a "You need to rest" message if you do more.
+
+{poke}{poke}{poke}   
+
+Pokes all 26 letters of alphabet. If you get a "You need to rest" message
+then try the following instead;
+
+{poke}
+Does 1/3 of alphabet. Then wait few seconds and run macro again to do
+another 1/3, then wait few more secs and run macro again for the last
+third.
+
+{poke}{wait 4}{poke}{wait 4}{poke}
+Does the same as the last macro except you don't need to run macro 3 times.
+Just run it once and it'll handle all the rest so you'll never get a 
+"You need to rest" message. Of course.. you may need to adjust "4" to
+however many seconds your BBS requires.
+
+------------------------------------------------------------------------
+SEND     Sends the TA command you want to execute to the modem
+         
+  Syntax:   {SEND CharacterToSend}{LookFor}
+
+  Parameters:   CharacterToSend
+
+                  is the TA command to execute, or user variable you want
+                  executed. If you want a carriage return added put a ";"
+                  on the end.
+
+                LookFor
+
+                  This tells TA where to end this command. Enter here
+                  the last few letters of the next expected line/prompt.
+                  Normally this is used when you don't want to send the
+                  next command in the macro until the display from the
+                  previous command is finished. Since TA is pretty much
+                  devoid of prompts, you can use "{}" to specify a look
+                  for nothing, just do rest of macro now.
+
+   Example:   {send look;}{}
+
+              Will look around your current area. Control is returned to
+              you immediately since the {} is empty and not looking for
+              any prompt.
+
+  
+   Example:   {:loop}{SEND reroll;}{}{send use XXX;}{one.}{goto loop}
+
+              This one does a loop. Executes all the commands between
+              {:loop} and {goto loop}, over and over, till you push ESC
+
+              The first thing sent is REROLL. Since nothing is specified
+              in the next set of brackets, the macro instantly sends the
+              next command which is USE XXX. This sends a bogus command
+              and thus you can get an error message to key off of (remember
+              no prompts in TA to key off of, so we making our own).
+
+              So what happens is.. REROLL is sent and displayed to screen,
+              then an error message is sent which we will use to look for
+              before we loop again. The last few letters of the error message
+              is "one.". So after sending REROLL and USE XXX, we look for
+              the text string "one." before the macro continues.
+
+------------------------------------------------------------------------
+SET    Clears Variables
+
+  Syntax:   {SET} or {SET variable}
+
+  Parameters:  variable
+
+                   is one of the 10 valid variables from %0 thru %9
+
+Using SET without a variable, initializes variables %4 thru %9 to null.
+
+Specifying a variable clears only that variable. All variables are valid
+here.
+
+  Examples:   {set %8}       clears variable 8
+              {set}          clears variables 4 thru 9 
+
+------------------------------------------------------------------------
+WAIT    Suspends macro temporarily for the set amount of seconds. Great
+        for those times in macros you get a "You must rest" message.
+
+  Syntax:   {WAIT #SecsToWait}
+
+  Parameters:  #SecsToWait
+
+                  Specify how many seconds you need to wait before macro
+                  continues execution.
+
+  Examples:   {WAIT 4}       waits 4 seconds
+              {WAIT}         if no seconds specified, waits 1 second.
+ 
+--------------------------------------------------------------------------
+ERROR messages
+The following are some of the macro error messages you may encounter.
+
+* Incorrect Command
+   This occurs when you have issued a command that TermTA doesn't recognize.
+   Perhaps you have spelled it incorrectly, or used the wrong syntax.
+
+* Wrong Syntax For Label
+   You're label does not have a ":" at the beginning of it, or perhaps
+   your forgot to enclose it within the "{}" brackets.
+
+* Label Not Found
+   You issued a GOTO command and the label you specified cannot be found
+   in the macro. Make sure your GOTO statement doesn't have a ":" at the
+   beginning of the label name. Also check to see if the label name is
+   spelled the same as the one you are using in your GOTO.
+

@@ -1,0 +1,40 @@
+Newhaven Cave                                           TermTA
+ 
+
+        [ ]     [ ]-[v]            A = Entrance to New Haven Dungeons.
+       /   \   /                   B = Lair
+[ ]-[ ]     [ ]                    v = Stairs down to level 2.
+ |
+[ ]
+ |
+[ ]-[ ]                                        [B]
+      \            LEVEL 1                      |
+       [ ]                                     [ ]
+      /                                       /
+   [ ]                                     [ ]
+    |                                     /
+   [ ]                             [ ]-[ ]
+    |                             /       \
+   [ ]                     [ ]-[ ]         [ ]-[ ]
+      \                     |                   |
+       [ ]-[ ]-[ ]         [ ]                 [ ]     [ ]-[ ]
+        |         \       /                       \   /
+       [A]         [ ]-[ ]                         [ ]
+
+
+
+
+        [ ]-[^]-[ ]
+       /           \                                  LEVEL 2
+[ ]-[ ]             [ ]             [ ]-[ ]
+                     |               |     \
+                    [ ]-[ ]         [ ]     [ ]-[ ]
+                           \       / |             \
+                            [ ]-[ ] [ ]             [ ]
+                                     |               |
+A =  Cave Bear Lair (Cavern)        [ ]             [ ]-[ ]
+^ =  Stairs Up To Level 1          /   \                   \
+                                [ ]     [ ]                 [ ]-[ ]-[ ]-[A]
+                                 |
+                                [ ]
+

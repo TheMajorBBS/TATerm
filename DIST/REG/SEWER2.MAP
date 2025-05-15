@@ -1,0 +1,41 @@
+Sewers, level 2
+Last Revised  9-5-94                                [ ]
+                                                     |
+                                            [ ]     [ ]
+                                           /   \   /
+                                        [p]     [ ]
+                                         |
+        [ ]                             [ ]
+       /   \                           /
+    [ ]     [ ]     [ ]             [ ]
+   /           \   /               /
+[ ]             [ ]             [ ]
+   \               \           /
+    [ ]             [ ]-[ ]-[ ]
+                         |
+                        [ ]             [ ]     [ ]
+                           \           /   \   /   \
+                            [ ]     [ ]     [ ]     [ ]
+                               \   /                 |
+                                [ ]                 [ ]         [ ]
+                                 |                     \       /  \
+                            [ ]J[^]P[ ]                 [ ]-[j]   [ ]
+                           /     O     \                            \
+                        [ ]     [v]     [ ]                         [ ]
+                       /                   \                       /  \
+                    [ ]                     [ ]                 [ ]   [ ]
+                     |                       |
+                    [ ]                     [ ]-[ ]     [ ]-[o]
+                       \                   /       \   /
+                        [ ]             [ ]         [ ]
+                           \               \
+                            [ ]             [ ]
+                           /                   \
+                        [ ]                     [ ]
+                         |
+                        [ ]
+
+o = Onyx key          O = Onyx key door
+p = Platinum key      P = Platinum key door
+j = Jade key          J = Jade key door
+     ^ & v = up and down stairs

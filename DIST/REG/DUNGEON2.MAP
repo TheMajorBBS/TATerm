@@ -1,0 +1,48 @@
+Dungeon Level 2                      Last Updated 9-5-94
+
+                                         [ ]
+                                        /   \
+                                     [ ]     [ ]
+                                    /         |
+                                 [ ]         [ ]
+                                            /
+                                         [ ]             [^] Troll
+                                        /                 |
+                                     [ ]                 [ ]
+                                      |                 /
+                                     [ ]             [ ]
+                                        \           /
+                     [ ]-[t]-[ ]         [ ]     [ ]
+                      |         \           \   /
+             Chimera [c]         [ ]         [c] Ogre
+                      |             \       /
+                     [ ]             [ ]-[ ]
+                    /
+                 [ ]
+                    \
+                     [ ]
+                        \
+                         [ ]                         [ ]-[ ]
+                          |                         /       \
+                         [ ]                     [ ]         [ ]
+                        /   \                   /
+     Cyclops [c]-[ ]-[ ]     [ ]-[ ]     [ ]-[ ]
+   (Silver Key) \                   \   /       \
+                 [ ]                 [ ]         [ ]
+                    \                           /
+                     [ ]                     [ ]
+                    /                       /
+                 [ ]                     [ ]
+                /                         |
+             [ ]                         [p]
+            /                             |
+         [ ]         [ ]                 [ ]
+        /           /                     # (Silver Door) 
+     [ ]         [ ]               Stone [c] 
+        \       /                  Giantess \
+         [ ]-[ ]                     (2)     [v]
+
+t = pit trap (need rope)
+p = poison trap
+^ & v = stairs up and down
+# = door

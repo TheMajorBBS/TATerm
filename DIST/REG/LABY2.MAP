@@ -1,0 +1,30 @@
+Labrynth - Level 2 
+This level will be Dark! unless the Stone on Level 5 is pushed!
+Glowstones will NOT work when it is Dark!
+
+                                         
+[ ]--[ ]  [ ]--[ ]  [ ]--[ ]  [ ]--[ ]--[ ]--[ ]
+ |    |    |    |    |    |    |              |
+[ ]  [ ]--[ ]  [ ]--[ ]  [ ]  [ ]  [a]--[ ]--[ ]
+ |                        |    |    |
+[ ]--[ ]--[ ]--[ ]--[ ]  [ ]--[ ]  [ ]  [ ]--[ ]
+                     |              |    |    |
+[ ]--[ ]--[ ]--[ ]  [ ]  [ ]--[ ]--[ ]  [ ]  [ ]
+ |              |    |    |              |    |
+[ ]  [ ]--[ ]  [ ]--[1]  [ ]--[ ]--[ ]  [U]  [ ]
+ |    |    |                        |         |
+[ ]  [ ]  [ ]--[ ]--[ ]--[ ]--[ ]  [ ]--[ ]--[ ]
+ |    |                        |
+[ ]  [ ]--[ ]  [D]  [ ]--[ ]  [ ]--[ ]--[ ]--[b]
+ |         |    |    |    |                   |
+[ ]--[ ]  [ ]  [ ]--[ ]  [ ]  [ ]--[ ]  [ ]--[ ]
+      |    |              |    |    |    |
+[ ]--[ ]  [ ]--[ ]--[ ]  [ ]  [ ]  [c]  [ ]--[ ]
+ |                   |    |    |    |         |
+[ ]--[ ]--[ ]--[ ]--[ ]  [ ]--[ ]  [ ]--[ ]--[ ]
+
+1 = Push Stone to turn on level 4 lights
+D = Stairs Down
+U = Stairs Up
+a,b,c =  where you will springboard up to from
+         the corresponding letter on level 3

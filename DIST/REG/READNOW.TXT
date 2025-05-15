@@ -1,0 +1,14 @@
+There are 2 text database files with the registered version of TermTA.
+One contains the names and descriptions of the spells in the game. The
+other has names of monsters in TermTA. (both have a file extension of .DAT)
+
+There may come a time when more monsters or more spells are added to TA.
+When this happens, you'll need to upgrade your database by adding the
+new spells and/or new monsters.
+
+This can easily be done with a word processor or text editor. Simply load
+the database you want to modify. Add the name of the monster or spell to
+the end of the database. Make sure you also correct the "SIZE =" line in
+each database to reflect the correct number of entries into that database.
+
+

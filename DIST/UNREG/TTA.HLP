@@ -1,0 +1,335 @@
+help N
++=========================================================================+
+| The following commands deal with orders given to followers.             |
++=========================================================================+
+|  COMMAND                  |  DESCRIPTION               |  SHORTHAND     |
+|---------------------------+----------------------------+----------------|
+| ORDER <WHAT> FOLLOW <WHO> | "Follow this denizen"      | OR <W> FO <W>  |
+| ORDER <WHAT> TRACK <WHO>  | "Track this denizen"       | OR <W> TR <W>  |
+| ORDER <WHAT> STOP         | "Stop tracking"            | OR <W> ST      |
++=========================================================================+
+| Note: Followers include creatures summoned or controlled by spells or   |
+|       other magical means, or those tamed by hunters.                   |
++=========================================================================+
+help C
++=========================================================================+
+| The following commands deal with combat.                                |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| ATTACK <WHO>      | Attack this denizen with your weapon  | A <W>       |
+| THROW <ITEM> <WHO>| Throw a weapon at this denizen        | T <I> <W>   |
+| FIRE <ITEM> <WHO> | Fire a weapon at this denizen         | F <I> <W>   |
+| USE <ITEM> <WHO>  | Use a magical weapon on this denizen  | U <I> <W>   |
+| CAST <SPELL>      | Cast an area of effect spell          | C <S>       |
+| CAST <SPELL> <WHO>| Cast a combat spell at this denizen   | C <S> <W>   |
++=========================================================================+
+help U
++=========================================================================+
+| The following commands deal with groups.      * = in TA 5.5 or later    |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| GROUP             | List the members in your group        | GR          |
+| APPOINT <WHO>     | Appoint this denizen group leader    *| AP <W>      |
+| ADD <WHO>         | Add this denizen to your group        | AD <W>      |
+| REMOVE <WHO>      | Remove this member from your group    | RE <W>      |
+| JOIN <WHO>        | Attempt to join this denizen's group  | J <W>       |
+| DISBAND           | Disband your group                    | DI          |
+| LEAVE             | Leave or stop waiting to join a group | LE          |
+| FOLLOW            | Begin following your group            | FO          |
+| HALT              | Stop following your group             | HA          |
+| SHARE <AMT>       | Share gold with your group            | SH <A>      |
++=========================================================================+
+help O
++=========================================================================+
+| The following commands deal with information.      * = in TA 5.5 only   |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| LOOK              | Examine your current surroundings     | L           |
+| LOOK <WHO>        | Look at this denizen                  | L <W>       |
+| LOOK <DIR>        | Look in this direction               *| L <D>       |
+| EXITS             | Display available exits              *| EX          |
+| INVENTORY         | List items in your inventory          | I           |
+| STATUS            | Display your status                   | ST          |
+| HEALTH            | Display brief status                  | HE          |
+| EXPERIENCE        | Display experience                    | EX or EP    |
+| SPELLS            | List spells in your spellbook         | SP          |
+| HELP              | Display general help message          | ?           |
++=========================================================================+
+help I
++=========================================================================+
+| The following commands deal with items.             * = in TA 5.5       |
++=========================================================================+
+|  COMMAND            |  DESCRIPTION                     |  SHORTHAND     |
+|---------------------+----------------------------------+----------------|
+| INVENTORY           | List items in your inventory     | I              |
+| GIVE <WHO> <ITEM>   | Give an item to this denizen     | G <W> <I>      |
+| GIVE <WHO> <#> GOLD | Give this denizen some gold      | G <W> <#> GOLD |
+| GET <ITEM>          | Get an item from room            | G <I>          |
+| DROP <ITEM>         | Drop an item from your inventory | D <I>          |
+| GET ALL             | Get all items in room           *| G ALL          |
+| DROP ALL            | Drop everything you're carrying *| D ALL          |
+| EQUIP <ITEM>        | Equip an item from inventory    *| EQ <I>         |
+| UNEQUIP <ITEM>      | Unequip an equipped item        *| UN <I>         |
+| USE <ITEM>          | Use an item                      | U <I>          |
+| USE <ITEM> <WHO>    | Use an item on this denizen      | U <I> <W>      |
+| EAT <ITEM>          | Eat a ration of food             | E <I>          |
+| DRINK <ITEM>        | Drink from a waterskin or potion | DR <I>         |
+| LIGHT TORCH         | Light a torch                    | LI TORCH       |
++=========================================================================+
+help M
++=========================================================================+
+| The following commands deal with movement.                              |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| <DIRECTION>       | Move in this direction                | N/SW/ETC.   |
+| DRAG <WHO> <DIR>  | Drag this denizen in this direction   | DR <W> <D>  |
++=========================================================================+
+help L
++=========================================================================+
+| The following commands deal with spells.                                |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| SPELLS            | List spells in your spellbook         | SP          |
+| PURGE <SPELL>     | Purge a spell from your spellbook     | P <S>       |
+| CAST <SPELL>      | Cast an area of effect spell          | C <S>       |
+| CAST <SPELL> <WHO>| Cast a spell on this denizen          | C <S> <W>   |
++=========================================================================+
+help A
++=========================================================================+
+| The following commands work only in Arenas.                             |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| RING GONG         | Ring the great gong                   | RI G        |
++=========================================================================+
+help D
++=========================================================================+
+| The following commands work only at the Docks.                          |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| BUY PASSAGE       | Buy passage across the great lake     | B  PASSAGE  |
++=========================================================================+
+help G
++=========================================================================+
+| The following commands work only in the Guild Hall.    * = in TA 5.5    |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| LIST ACOLYTE      | List acolyte spells                   | LS A        |
+| LIST DRUID        | List druid spells                     | LS D        |
+| LIST NECROLYTE    | List necrolyte spells                *| LS N        |
+| LIST SORCEROR1    | List sorceror spells (part 1)         | LS S1       |
+| LIST SORCEROR2    | List sorceror spells (part 2)         | LS S2       |
+| BUY TRAINING      | Pay for a training session            | B TRAINING  |
+| BUY PROMOTION     | Pay for a promotion                   | B PROMOTION |
+| BUY <SPELL>       | Buy spells                            | B <S>       |
++=========================================================================+
+help S
++=========================================================================+
+| The following commands work only in Shops.                              |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| LIST ITEMS        | List items available from the shop    | LS I        |
+| BUY <ITEM>        | Buy an item from the shop             | B <I>       |
+| SELL <ITEM>       | Sell an item from your inventory      | S <I>       |
++=========================================================================+
+help T
++=========================================================================+
+| The following commands work only in Taverns.                            |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| BUY DRINK         | Buy you a drink from the bar          | B DRINK     |
+| BUY MEAL          | Buy you a hot meal from the kitchen   | B MEAL      |
+| PLAY SLOTS        | Take a chance at the slot machine     | PL SLOTS    |
+| PLAY BONES        | Take a chance at rolling the bones    | PL BONES    |
++=========================================================================+
+help P
++=========================================================================+
+| The following commands work only in Temples.                            |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| BUY CURING        | Pay to cure you of poison             | B CURING    |
+| BUY HEALING       | Pay to heal your wounds               | B HEALING   |
+| BUY REMOVAL       | Pay to remove paralysis               | B REMOVAL   |
+| BUY RESTORING     | Pay to restore drained stats          | B RESTORING |
+| DONATE <AMT> GOLD | Donate gold to the temple             | D <A> G     |
++=========================================================================+
+help V
++=========================================================================+
+| The following commands work only in Vaults.                             |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| BALANCE           | Give your current account balance     | BA          |
+| DEPOSIT <AMT>     | Deposit gold in your account          | DE <A>      |
+| WITHDRAW <AMT>    | Withdraw gold from your account       | WI <A>      |
++=========================================================================+
+help E
+Experience points needed in order to advance a level. Based on TA 5.5
+characters. Amounts are the same for TA 5.0 and TA 5.5
+
+    Acolyte &             Druid &
+LV  Necrolyte  Archer     Sorceror   Hunter     Rogue      Warrior
+--------------------------------------------------------------------
+ 1)         0          0          0          0          0          0
+ 2)      1150       1125       1180       1125       1120       1125
+ 3)      3490       3240       3800       3240       3200       3240
+ 4)      9025       8025      10290       8025       7860       8025
+ 5)     20640      17890      24160      17890      17440      17890
+ 6)     42200      36000      50000      36000      35000      36000
+ 7)     78200      66300      93500      66300      64400      66300
+ 8)    134300     113400     161400     113400     109900     113400
+ 9)    216900     182600     261500     182600     177000     182600
+10)    333500     280200     402700     280200     271500     280200
+11)    492000     413000     595000     413000     400000     413000
+12)    701800     588700     849600     588700     570100     588700
+13)    972800     815600    1178400     815600     789600     815600
+14)   1315900    1102800    1594900    1102800    1067600    1102800
+15)   1742800    1460100    2113200    1460100    1413500    1460100
+16)   2266200    1898300    2748800    1898300    1837500    1898300
+17)   2899600    2428600    3518100    2428600    2350800    2428600
+18)   3657600    3063100    4438700    3063100    2964800    3063100
+19)   4555300    3814700    5529300    3814700    3692200    3814700
+20)   5609100    4696900    6809500    4696900    4546000    4696900
+21)   6836000    5724000    8300000    5724000    5540000    5724000
+22)   8254100    6911200   10022900    6911200    6689000    6911200
+23)   9882100    8274200   12001000    8274200    8008000    8274200
+24)  11739900    9829700   14258400    9829700    9513300    9829700
+25)  13848000   11594700   16820200   11594700   11221500   11594700
+
+
+help Y
+  Welcome to Tele-Arena. Tele-arena is basically a role playing swords &
+sorcery type adventure game similar to many popular games such as Dungeons
+& Dragons(tm), etc. It is a land where players and monsters battle for
+treasure and glory. When you first enter the game you will be asked two
+questions. The first is which race you would like to be. The second is
+which class you would like to be.
+
+  Race refers to your physical appearance and characteristics. Some races
+are better suited to certain classes than others. The races currently common
+in the world of Tele-Arena are Elves, Dwarves, Gnomes, Humans, Goblins, and
+Half-ogres.
+
+   ELVES  : Lithe and intelligent and excel in spellcraft.
+  DWARVES : Tough and strong and are skilled in physical combat.
+   GNOMES : Quite agile and much heartier than elves, and do almost equally
+            well as spellcasters or rogues.
+   HUMANS : The 'normal' average that all other races are compared to and are
+            equally suited for any class.
+  GOBLINS : Cunning and agile creatures who are shunned by most other races.
+            They make very skillful rogues.
+HALF-OGRES: Are the toughest, and most durable of the races. They are usually
+            the offspring of renegade ogres and their unwilling human
+            captives. What they lack in intelligence, they make up for with
+            brute strength.
+
+  Class refers to your profession or calling in life. The current classes
+available are Warrior, Sorceror, Acolyte, Rogue, Hunter, Druid, and in
+TA 5.5 there is a Necrolyte.
+
+WARRIORS : Rely on sheer muscle to defeat their enemies. They also get the
+           best choice of armor and weapons. Warriors are physically the
+           toughest class of character, and may use any armor or weapon in
+           the game. They also gain the highest vitality and gain attacks
+           faster than any other class.
+SORCERORS: May cast powerful offensive spells, but may only wear robes and
+           wield a staff.
+ACOLYTES : Fairly adept at combat, though not so much so as warriors, and
+           they may cast curative and healing spells. Acolytes get a wider
+           selection of weapons and armor than do sorcerors, though not as
+           many as warriors.
+  ROGUES : Are better at physical combat than sorcerors, but not as capable
+           as acolytes or warriors. They get a better choice of arms and
+           armor than sorcerors, but not as good as that of acolytes or
+           warriors. Rogues also have a number of special abilities which
+           improve with level, such as the ability to rob other characters
+           of their gold and items, detect and avoid traps, pick locks, and
+           a few other useful skills.
+ HUNTERS : About as adept at physical combat as are warriors, but get a
+           somewhat more limited choice of armor and weapons. They too have
+           special abilities which include the abilities to track another
+           character, hunt for food and water, or tame wild animals.
+  DRUIDS : Druids get the same choice of weapons that acolytes do, and may
+           wear robes or a leather cuirass. They may also cast an unusual
+           assortment of offensive and utility spells.
+NECROLYTES: Practice the darkest forms of magick. They get the same
+            choices of armor and weapons as do sorcerors, but gain power
+            more rapidly. They are not very skilled at physical combat.
+
+  There are also six basic statistics dealing with the physical and mental
+characteristics of your character. There are two mental and four physical
+characteristics. These are intellect, knowledge, physique, stamina, agility,
+and charisma.
+
+INTELLECT : Deals with how smart or intelligent your character is.
+KNOWLEDGE : How wise or knowledgable your character is.
+  PHSIQUE : Used to describe your character's strength and physical build.
+  STAMINA : Tells how healthy your character is as well as how much
+            endurance he/she has.
+  AGILITY : Used to describe your character's dexterity or physical
+            coordination.
+ CHARISMA : Deals with your character's physical appearance as well as how
+            influential they are.
+
+  There are two other statistics that you will have to keep track of in
+order to survive. These are vitality and health.
+
+ VITALITY : Describes how much physical punishment your character can take
+            before death occurs. This damage may be inflicted upon you by
+            the weapons or spells of other players or by the many monsters
+            that wander the land. If your vitality reaches zero, you die.
+   HEALTH : Describes your current state of health including whether or not
+            you're poisoned, hungry, thirsty, or just healthy.
+
+help X
++=========================================================================+
+| The following are miscellaneous commands.                               |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                                        |
+|-------------------+-----------------------------------------------------|
+| REROLL            | Reroll your character at level 1                    |
+| SUICIDE           | When there is no hope of success                    |
+| ACT: <message>    | Custom action messages                              |
++=========================================================================+
+help B
++=========================================================================+
+| Note: Archers are currently the only character class allowed to use     |
+|       the missle weapons. (i.e. shortbows, longbows, and crossbows)     |
+|       No other character class is proficient in their use. Also see     |
+|       the 'fire' command under the 'combat' help topic.                 |
++=========================================================================+
+help H
++=========================================================================+
+| The following commands work only for Hunters.                           |
++=========================================================================+
+|  COMMAND          |  DESCRIPTION                          |  SHORTHAND  |
+|-------------------+---------------------------------------+-------------|
+| HUNT              | Hunt for food                         | H           |
+| MESMERIZE <WHO>   | Attempt to mesmerize this monster     | MS <W>      |
+| TRACK <WHO>       | Attempt to track this denizen         | TR <W>      |
+| TAME <WHO>        | Attempt to tame this monster          | TM <W>      |
++=========================================================================+
+help R
++=========================================================================+
+| The following commands work only for Rogues.                            |
++=========================================================================+
+|  COMMAND            |  DESCRIPTION                     |  SHORTHAND     |
+|---------------------+----------------------------------+----------------|
+| ROB <WHO> OF GOLD   | Attempt to steal gold            | R <W> OF GOLD  |
+| ROB <WHO> OF <ITEM> | Attempt to steal an item         | R <W> OF <I>   |
++=========================================================================+
+| Note: Rogues also have the innate ability to avoid traps, pick locks,   |
+|       and climb virtually sheer surfaces in some cases.                 |
++=========================================================================+
+
+help

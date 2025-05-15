@@ -1,0 +1,49 @@
+Stoneworks - Level 6                    Last Updated 9-5-94
+
+    [U]-[ ]-[ ]-[ ]-[ ]-[ ]-[ ]
+                             |
+             Stone Giant(2) [c]-[ ]-[ ]-[ ]
+                                         |
+                                        [ ]
+                                         |
+                                        [ ]
+                                         |
+[t]-[ ]-[ ]-[ ]-[ ]             [ ]-[ ]-[ ]
+ |               |     Stone     |
+[L6]            [ ]    Giant(2) [c]-[ ]-[ ]-[t]
+ |               |               |           |
+[ ]             [ ]             [ ]         [ ]
+ |     Stone     |               |           |
+[ ]    Giant(3) [c]-[ ]-[ ]-[ ]-[ ]         [ ]-[ ]--[ ]--[ ]
+ |               |                           |             |
+[ ]              |                          [ ]           [ ]
+ |              [ ]                          |             |
+[ ]              |                    [ ]---[c]           [ ]
+ |               |                     |     Stone         |
+[ ]-[ ]-[ ]-[ ]-[ ]                   [ ]    Giant(3)     [ ]
+             |                         |                   |
+            [ ]                       [ ]                 [ ]
+             |                         |                   |
+            [ ]-[ ]-[ ]-[ ]-[ ]-[c]---[ ]                 [ ]
+                               Stone   |                   |
+                               Giant  [ ]                 [ ]
+                                (2)    |                   |
+                                       |                  [ ]
+                                      [ ]                  |
+                                       |                  [L7]
+                                       |                   |
+                                  [ ]-[ ]-[ ]-[ ]-[ ]-[ ]-[t]
+                                   |
+                                  [ ]
+ 3rd                               |
+ Town <-[R]-[EC]-[ ]-[c]-[ ]-[WC]-[ ]
+                    Stone
+                    Giant(2)
+
+L6 = Pull Lever to open West Chasm (WC)
+L7 = Pull Lever to open East Chasm (EC)
+ R = Yellow Rune
+ U = Stairs Up
+ t = traps that can't be turned off
+ 
+(Green Rune is needed to enter the 3rd town)

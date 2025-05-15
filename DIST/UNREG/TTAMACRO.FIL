@@ -1,0 +1,26 @@
+'DRINK ANEMONE                            DESCRIPTION MENU
+{send dr ane;}{}
+'drink yarrow               You can edit/add macro descriptions here.
+{send dr yar;}{}
+'drink zarythium
+{send dr zar;}{}
+'Drop Carrier                     To view the script code for these
+{dropc}
+'find invisible             macros, hit "F" to switch to the CODING MENU.
+{poke}{wait 4}{poke}{wait 4}{poke}
+'                           
+
+'                           The Code Menu is where you can write your own
+
+'                           macros using TermTA's script language.
+
+
+
+
+
+
+
+
+
+
+

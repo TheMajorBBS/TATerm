@@ -1,0 +1,24 @@
+Warning! If you are upgrading from TermTA 1.2 or earlier, then you must
+reconfigure TermTA. This version allows for more then 1 configuration
+file due to the fact that many folks play in more then one game of TA.
+Thus they have different characters which require different configurations.
+
+Now you must specify a name for your database. Use whatever name is easy
+for you. Maybe the name of your character, or the BBS name will do.
+To start TermTA you must now include the database name on the command line;
+
+TTA DatabaseName
+
+If you don't specify the database name, then TermTA will prompt you for
+one when you start.
+------------------------------------------------------------------------
+To make sure TermTA works well for you, don't forget to configure the
+options on F2. For Auto Attack to work, don't forget to configure F9.
+
+Also check out the macros on F7. They are set up to work with my character
+"Will Boyett" which is an Acolyte. The spells you use and the name you
+want to use them on may be different. So make sure you modify the macros
+to work with your character before you use them.
+
+Recap: Before you play the first time, make sure to check F2, F7, and F9.
+

@@ -1,0 +1,43 @@
+Dungeon Level 3                       Last Updated 9-5-94
+
+
+                [c]-[ ]-[ ]-[ ]                                 [*]
+              Skeleton         \                                 |
+              Lords(2)          [ ]                             [f]
+                                   \             (Electrum Door) #
+                                    [ ]                     [ ]-[c]
+                                       \                   /    Stygian 
+                                        [ ]             [ ]     Dragon
+                                         |             /     (Electrum Key)
+                                        [ ]         [ ]          
+                                         |         /
+    [ ]-[ ]         [ ]                 [ ]-[ ]-[ ]
+         |           |                   |
+        [ ]     [ ]-[ ]-[ ]-[ ]         [ ]
+        / \     /            |           |
+      [ ] [ ]-[ ]           [ ]         [ ]
+      /                      |           |
+[ ]-[ ]             [ ]-[ ]-[c]-[ ]-[ ]-[ ]             [ ]-[c] Cave
+     |             /      Gargoyle                     /        Lion(2)
+    [ ]         [ ]         (2)                     [ ]
+      \        /                                   /
+      [ ]   [ ]                                 [ ]
+           /                                     |
+        [ ]                   [ ]-[ ]-[ ]       [ ]
+           \                  /         \        |
+            [ ]             [ ]         [ ]-[ ]-[ ]-[ ]
+             |             /                     |    \
+   Troll(2) [c]-[ ]-[ ]-[ ]                     [ ]   [ ]
+                           \                   /        \
+                            [ ]             [ ]         [ ]
+                               \           /   \          \
+                                [ ]     [ ]     [ ]       [c] Stone
+                                 |                            Giantess(2)
+                                [ ]
+                                 |
+                                [^]
+
+^ = Stairs Up
+# = Secret Door
+f = Falling Stone Trap (Up to 180 Damage)
+* = White Rune

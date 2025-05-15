@@ -1,0 +1,44 @@
+Stoneworks - Level 1                     Last Updated  9-5-94
+
+To Desert
+ |
+[@]-[ ]
+ |     \
+ |      [ ]
+[ ]        \
+ |          [ ]           [ ]-[ ]
+ |             \                 \
+[ ]             [ ]               [ ]
+   \           /                     \
+    [ ]     [ ]                       [ ]
+   /        /                        /   \
+[ ]      [ ]          [L1]        [ ]     [S1]
+ |          \        /   \         |
+ |           [ ]-[ ]      [ ]     [ ]
+ |         /                 \     |
+[ ]-[ ]-[ ]                   [ ]-[ ]
+ |         \                 /
+ |           [ ]-[ ]      [ ]
+ |          /       \    /
+[ ]      [ ]         [T1]
+  \     /              |
+  [ ]-[ ]             [ ]             [!]
+                     /               /
+                  [ ]         [ ]-[ ]
+                 /           /
+              [ ]         [ ]
+               |           |
+             [D1]-[ ]-[ ]-[ ]
+                           |
+                          [ ]
+                             \
+                              [ ]-[ ]
+                                     \
+                                      [S2]     [S3]-[ ]-[ ]-[D]
+
+L1 = Pull Lever to disarm stone trap (T1)
+S1 = Push Stone to open door at D1
+S2 = Push Stone to go to S3
+S3 = If on way out Push Stone to go to !
+ D = Stairs Down
+ @ = "say komi" to enter the Stoneworks

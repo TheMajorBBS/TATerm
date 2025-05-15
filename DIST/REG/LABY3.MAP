@@ -1,0 +1,31 @@
+Labrynth - Level 3  
+
+
+[ ]--[ ]--[ ]--[ ]--[ ]--[ ]  [ ]--[ ]--[ ]--[ ]
+ |         |                   |         |    |
+[ ]  [ ]  [ ]  [ ]--[ ]--[ ]--[gD] [A]--[ ]  [ ]
+ |    |         |         |              |
+[ ]--[ ]--[ ]--[ ]--[ ]  [ ]--[ ]--[ ]  [ ]--[ ]
+                                    |
+[ ]--[ ]--[ ]--[ ]--[ ]--[ ]  [e]--[#]  [ ]--[ ]
+ |                        |         |    |    |
+[ ]  [ ]--[ ]--[ ]--[ ]  [ ]  [ ]--[f]--[$]  [ ]
+ |    |              |    |    |              |
+[ ]  [ ]  [ ]--[ ]  [ ]  [ ]  [ ]  [ ]--[ ]--[ ]
+ |    |    |    |    |    |         |    |    |
+[ ]  [ ]  [ ]  [ ]  [ ]  [ ]--[U]  [1]--[ ]--[B]
+ |    |    |         |    |              |
+[ ]  [ ]  [ ]--[ ]--[ ]  [ ]  [ ]--[ ]--[ ]--[ ]
+ |    |                   |    |         |
+[ ]  [ ]--[ ]--[ ]--[ ]--[ ]  [ ]  [C]  [ ]  [ ]
+ |                             |    |    |    |
+[ ]--[ ]--[ ]--[ ]--[ ]--[ ]--[ ]  [ ]--[ ]--[ ]
+
+1 = Pull Lever to open door at #
+D = Stairs Down
+U = Stairs Up
+A,B,C = Springboards to corresponding letters
+         on level 2
+e,f,g = Where you will springboard up to from
+        the corresponding letter on level 5
+$ = Where the level 4 stairs come up

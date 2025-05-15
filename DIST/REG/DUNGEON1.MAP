@@ -1,0 +1,40 @@
+Dungeon Level 1                     Last Updated 9-5-94
+
+                                                                [v]
+                                                               # (Bronze
+                                                 Cyclops(2) [c]    Door)
+                                               (Bronze Key)  |
+                                                            [ ]
+                                                           /
+                                    [ ]-[ ]             [ ]
+                       (Iron Door) #       \             |
+                    [ ]-[ ]-[ ]-[^]         [ ]-[ ]     [ ]
+                   /                               \   /
+                [ ]                                 [ ]
+                 |
+                [ ]
+     Minotaur    | 
+   (Copper Key) [c]   
+                   # (Copper Door)
+                    [ ]
+                       \
+      [ ]               [t]
+     /                     \
+   [ ]                      [ ]                 [ ]             [ ]
+    |                        |                 /   \           /   \
+   [ ]-[ ]             Ogre [c]#[ ]         [ ]     [ ]     [ ]     [ ]
+          \                / |     \       /           \   /         |
+           [ ]          [ ] [ ]     [ ]-[ ]             [ ]         [ ]
+              \       /       \                         |
+               [ ]-[ ]         [ ]                     [ ]
+                    |           |                         \
+                   [ ]         [ ]                         [c] Cyclops
+                  /           /   \                            (Iron Key)
+               [ ]         [ ]     [ ]
+                                      \
+                                       [ ]
+                                            -Ogre gives Brass Key which
+# = doors                                    opens the door East of him-
+^ = Stairs Up to the arena
+v = Stairs Down
+t = Spike Trap

@@ -1,0 +1,628 @@
+                              TermTA
+                            VERSION 3.1
+         Copyright 1995 by Will Boyett - All Rights Reserved
+
+*WARNING*     You will need the following to properly run TermTA:
+
+                     EGA or better graphic card
+                          DOS 3.3 OR later
+        
+                      TeleArena 5.5 or later
+      Not all features may work with TeleArena versions before 5.5.
+*************************************************************************
+
+                      DISCLAIMER OF WARRANTY
+
+THIS SOFTWARE IS SOLD "AS IS" AND WITHOUT WARRANTIES AS TO PERFORMANCE OF
+MERCHANTABILITY OR ANY OTHER WARRANTIES WHETHER EXPRESSED OR IMPLIED.
+BECAUSE OF THE VARIOUS HARDWARE AND SOFTWARE ENVIRONMENTS INTO WHICH THIS
+PROGRAM MAY BE PUT, NO WARRANTY OF FITNESS FOR A PARTICULAR PURPOSE IS
+OFFERED.
+
+*************************************************************************
+What is TermTA
+
+* TermTA is an on-line terminal program designed specifically for use in
+  playing TeleArena, the popular BBS door game.
+* TermTA is an interface composed of graphics and sound.
+
+The advantage of using TermTA is that it is custom designed just for
+playing the game. Thus you have a lot of features that your normal
+term program like Telemate or QModem can't offer.
+
+To help make learning TermTA as easy as possible, I've broken the docs
+into these files...
+
+!READ.NOW     Read this before you actually run TermTA for any special
+              information.
+!TTA.DOC      This file. Explains what TermTA is, how to run it, and the
+              available features.
+!SCRIPT.DOC   Explains TermTA's script language, so you can start coding
+              your own custom macros for use in TermTA.
+!WHATNEW.DOC  What's changed in this recent version.
+!ORDER.FRM    How to register quickly and get in on the extra TermTA
+              features.
+
+*************************************************************************
+Here's What You Get By Registering TermTA
+(please see !ORDER.FRM for more info)
+
+TermTA is marketed under the shareware concept. It is not a FREE program.
+As shareware.. you are granted a right to try TermTA for a short trial
+period (1-2 weeks should be enough to get to know the program well). At the
+end of that time you must decide whether to keep the program or delete it.
+
+Here's one way to test whether you should keep the program...
+After your trial period go back to playing TA with your regular comm program.
+If you find you can still play and enjoy TA with your comm program, then
+you don't need TermTA. But if you find it harder to play and enjoy TA, then
+please, register your copy of TermTA with me. Your registration grants you
+a license to keep using the program for all your playing needs.
+
+Besides.. there are many more benefits you'll get by registering...
+
+1) Complete set of maps for playing TA. (Well maybe not complete, as new
+   versions of TA come out with more new areas. But you will get enough 
+   maps to get you a BLUE rune at least)
+
+2) Expanded monster database so your Auto Attack feature will work on ALL
+   monsters.
+
+3) Ability to configure Health Monitor to NONE and GR instead of just HE.
+
+4) Your key will get rid of those annoying registration screens and delays
+   you get when exiting TermTA.
+
+5) Your key is good for future upgrades. That means you can not only access
+   the registered features now in TermTA, but in any and all upgrades
+   coming out in the future!
+
+6) Gets rid of the announcement that you are using TermTA when entering TA
+
+7) Then there is all that goodwill stuff, you're helping the development
+   so I can bring you a bigger and better TermTA (and prices will go up as
+   the program gets bigger.. so get in now while it's cheap).
+
+To register.. see the ending screen of TermTA for address. Better yet,
+print the !ORDER.FRM file and fill it out now!!
+
+*************************************************************************
+How To Start TermTA
+
+Syntax:  TTA DatabaseName Switch
+
+Where "DatabaseName" is a name you have chosen for this database. You must
+supply a name. If you don't enter it on the command line, then TERMTA will
+ask you for one before it will run. The purpose of the "DatabaseName" is
+for those who play in more then one game of TA and thus may have different
+characters with different configurations. I usually call my database the
+same name as the BBS the game is on. Easy to remember then, which database
+goes to which game of TeleArena.
+
+Where "Switch" can be any letter or number. "Switch" is OPTIONAL, but if
+used, MUST follow the "DatabaseName". The purpose of "Switch" is to bypass
+TERMTA's prompt that asks if you want to dial a BBS. Sometimes you may
+already be online when you want to start TERMTA. In those cases you won't
+need to dial and log onto a BBS. Thus you don't need to be bothered by
+TERMTA's prompt asking if you want to dial in. Just enter any character
+here. If character found, prompt is bypassed.
+
+There are 3 ways to use TERMTA:
+
+1) Offline. TERMTA can be run offline for various things.
+  
+2) You can use TERMTA to connect to a BBS.
+
+3) You can start TERMTA after you have already connected to the BBS
+   using your comm program.
+
+   If you need to use your comm program for logging onto the BBS (in case
+   you want/need to do other things on-line like file transfers, etc..)
+
+   You can always Exit/Shell from your comm program (make sure not to drop
+   carrier) and then start TERMTA.
+
+   Just make sure to answer NO when asked if you want to dial a BBS
+   (no need to dial since you are already online) or use the optional
+   "Switch" parameter on the command line to bypass this step.
+
+   When using this method, make sure your comm program connects to the BBS
+   at the same settings you have configured in TERMTA. Simply go to TERMTA's
+   F8 menu (do this offline). Jot down the modem settings (baud, port,
+   handshaking, etc), and set your comm program to use the same settings.
+
+   Then call your BBS with your comm program. Do your e-mail, file transfers,
+   etc.. When ready to play TA, exit your comm without dropping carrier
+   (if you are shelling, you should set your comm program to swap itself to
+   XMS/EMS), start TERMTA. Play TA.
+
+   When done playing you can log off the BBS while in TERMTA, or exit
+   TERMTA and return to your comm program.
+
+   If you decide that after playing TA, you need to get back in your comm
+   program, you can do so without having to redial the BBS. Simply exit
+   TERMTA and start your comm program WITHOUT sending the modem init string.
+   In Telemate, you would use the /O switch to do this.
+
+   FINAL NOTES:
+   If you shell to DOS to run TERMTA, or use a hotkey, you'll probably wise
+   to configure your comm program to shell itself to EMS/XMS/DISK.
+
+   With this method, I recommend starting TERMTA while you are at your
+   BBS's main menu prompt. Make sure if you get a lot of global messages,
+   that they are turned off first before starting TERMTA
+
+***************************************************************************
+Files created and/or used by TermTA 
+
+TermTA Program files:
+
+!TTA.DOC      term documentation. This file. Can also be printed
+!SCRIPT.DOC   help file for creating script macros
+!ORDER.FRM    order form
+!READ.NOW     Latest info you'll need for running the new version
+!WHATNEW.DOC  Latest features added to TermTA
+
+TTASPELL.DAT  Spells database
+TTA.EXE       the terminal program
+SETUP.EXE     maintains modem configurations/dialing lists
+FILE_ID.DIZ   file description for TermTA
+TTAMACRO.FIL  text file that contains your  macros
+TTADIAL.CFG   contains your dialing list and modem strings
+.CFG files    Contains the configuration data on your game.
+              Created by TermTA
+.MAP files    maps of the various places in TA
+.GFX files    TermTA graphic files. Must have these for TermTA to work
+.CAP file     a capture file
+
+***************************************************************************
+How to use features with Mouse or Keyboard
+
+Previously I explained how to start TERMTA and how to correct any problems
+when running it. So this section will focus on how to use the Mouse or
+Keyboard to move around in TERMTA.
+
+When using the keyboard, the following keys run the following features:
+You can use the mouse to click on these also.
+   
+   F1   Macros                CTRL-C   Open/Close a capture file
+   F2   Config Menu           CTRL-D   Shell to DOS
+   F3   View Maps             CTRL-G   Group Health Display
+   F4   Display Exits         CTRL-E   Your Health Display
+   F5   Auto Share            CTRL-T   List Exits
+   F6   Auto Roam             CTRL-F   List Items For Sale
+   F7   Auto Restore          CTRL-S   List your Stats
+   F8   Auto Reroll           CTRL-K   List your Spells
+   F9   Auto Attack           CTRL-B   Scrollback buffer
+   F10  Auto Heal             CTRL-L   Look
+                              CTRL-A   Dial BBS
+                              CTRL-I   List your Inventory
+                              CTRL-X   Display your Experience points
+
+Besides the above, TERMTA comes with a script language for making macros.
+These Macros can be found on the Macro Screen (F7). TERMTA assigns each
+macro to a letter. These macros can be run by using the ALT key and the
+letter for that macro.
+
+To use a mouse to run the ALT key macros, simply click on the letter
+at the TOP of the TERMTA screen.
+
+                         MOVEMENT KEYS 
+
+As you know TA requires you to type in NW, NE, etc to move around.
+This can be slow and tiring (not to mention boring). TERMTA
+alleviates this problem by allowing you other choices for moving.
+
+Mouse:  Use the left mouse button to click on the on-screen compass, or
+        up/down buttons
+
+Keypad: Use the numeric keypad (make sure Num Lock is off) for moving.
+
+                                N
+                         [ 7 ][ 8 ][ 9 ]
+                       W [ 4 ]     [ 6 ] E
+                         [ 1 ][ 2 ][ 3 ]
+                         [ 0 ][ . ]
+                          Up  Down
+
+Of course, you can still type in the commands manually at the command line
+should you so desire.
+
+***************************************************************************
+Features of TermTA
+
+------------>>>>>>>>>>>  F1 - MACROS   <<<<<<<<<<<<--------------
+
+The Macro Menu displays all the macros you have available to use. You'll
+also see a special FLIP button. This allows you to toggle the display of
+macros. When you first open the menu you will see a description of your
+macros. By using the FLIP button you can display (and edit/add) the macro's
+script code.
+
+Your macros are saved in a text file called TTAMACRO.FIL. You can create
+these macros off-line or while on-line from within TermTA.
+
+To create custom macros that TermTA understands you'll need to use
+TermTA's script language (see !SCRIPT.DOC for complete details).
+
+                        ------------------------
+NOTE: While running a macro, should you wish to abort it, simply press the
+      <ESC> key. Sometimes, if you coded the macro wrong, you could find
+      yourself in an endless loop (you'll know it when the screen stops
+      displaying and none of the keys in TermTA work). Again, press <ESC>
+      until you exit from such a loop.
+                        ------------------------
+
+The easiest way to create your macros is within TermTA. However if
+you would like to create the TTAMACRO.FIL file off-line in a word processor
+the format is as follows:
+
+1) Add a "'" to the beginning of the description line
+2) put the description line above the macro line
+
+Not all macros need to be described. Here are some examples of proper format:
+
+EXAMPLE 1 (both macros described):
+
+'drinks water
+{send dr wat;}{}
+'looks around
+{send look;}{}
+
+EXAMPLE 2 (only third macro described):
+
+{send eat rat;}{}
+{send reroll;}{}
+'look around
+{send look;}{}
+
+If all this is confusing to you, then create your macros and descriptions
+in TermTA. Then Exit TermTA or Shell to DOS and examine the TTAMACRO.FIL
+file to see the format it is created in.
+
+---------->>>>>>>>>>>  F2 - CONFIG MENU <<<<<<<<<<<<------------
+
+Here you can configure TermTA to work with TA.
+
+Some things you'll need to configure is your modem settings for that BBS,
+whether you want sound on or off, and the commands you want to use with
+Auto Restore, Auto Heal, and Auto Attack.
+
+Auto Restore commands can cure you from Thirst, Hunger, and Poison.
+The Auto Heal commands are used for restoring Vitality and Mana.
+The Auto Attack commands are used each round when attacking.
+
+* To configure Vitality, enter how many vitality points you wish to lose
+  before your Vitality will be healed.
+
+  Ex: Your heal spell cures for 150 damage. Therefor, configure TermTA to
+      heal when you have lost 130 points or so of Vitality.
+
+* To configure Mana, you specify how many points you must have LEFT before
+  the Mana heal command goes off.
+
+  Ex: For healing yourself, your spell requires 4 mana. When your mana gets
+      to 3 points or less, you will no longer be able to cast your heal
+      (or attack) spell. Therefor, 3 is a good time to restore Mana. So
+      enter "3" when configuring the Mana heal.
+
+* To configure your Attack Sequence, you'll need to enter:
+
+  1) the number of attacks per round (before you have to rest).
+  2) how many seconds you need to rest for.
+  3) How you want to attack. You can attack with your weapon, use a magic
+     item, or cast spells. Simply type in your command (minus the monster
+     name as TermTA will find which monster it is and add the monster name
+     automatically). 
+
+   Examples:  A         if you want to ATTACK
+              Use rod   to use the magic rod
+              C teka    to cast a teka spell
+
+   NOTE: When using an area spell here, add a "*" to the beginning of the
+   command to tell TermTA it is an area spell and thus NOT to add name
+   of monster to command.
+
+  4) Monitor health. This option allows you to monitor your Vitality/Mana
+     as you are attacked. Every time you get hit, your health will be 
+     displayed. Whether you want to heal yourself or not, is up to you.
+     Health monitoring only occurs while Auto-Attack is on.
+
+     If you are going to using AUTO HEAL for healing while in combat,
+     then you must use "HE" here.
+
+     Unregistered users, must monitor health via HE. Registered users can
+     monitor health via TA's HE or GR command (or NONE, in case you want to
+     turn it off).
+
+------------------>>>>>>>   F3 - SELECT MAP   <<<<<<<<<-------------------
+
+This window displays your available maps and allows you to choose one for
+viewing. You can also add your own maps to TermTA by giving them an
+extension of .MAP
+
+* Registered users get a full set of maps for TA. (at least up to the
+  BLUE Rune). New maps will be added as future editions of TeleArena 
+  are released with new areas.
+
+Personally I prefer to print out the maps that come with the registered
+version instead of using F3 and/or F4 to view them. But it is here in case
+you don't have a printer.
+
+--------------->>>>>>>>  F4 - DISPLAY EXITS  <<<<<<<<<<<-----------------
+
+When DISP EXITS (works only for TeleArena 5.5 or later versions) is ON,
+TERMTA will display the exits for every room you enter or are in. Only
+exception being those times you are in combat. Don't need to move when
+fighting, so no use to display. Makes for screen displays and attacks.
+
+Required for using Auto Roam.
+
+------------------>>>>>>>>  F5 - AUTO SHARE  <<<<<<<<<<<-----------------
+
+This nifty feature will share with your group all the gold you find while
+fighting in groups. Now you no longer need to worry about sharing when
+fighting. Keep your mind on the attack always.
+
+------------------>>>>>>>>  F6 - AUTO ROAM  <<<<<<<<<<<-----------------
+
+Don't have much time for playing TA but still want to get experience points
+so you can advance? This feature will move your character about fighting 
+and healing as required.
+
+To use this feature, first turn on Auto Heal, Auto Attack, and Auto Exits.
+Then turn on this feature and away you go. Sit back and let TERMTA do all
+the work for you.
+
+Of course this feature is not 100% safe. Another player and/or monster
+could be encountered that can inflict damage on you faster then you can.
+heal. Thus leading to your death. Therefor I recommend you at least monitor
+the game in case something extremely dangerous is encountered. Or set your
+character loose in areas with easy monsters.
+
+When you first start the feature, you will be prompted in which direction
+to go. Simply enter the direction. You can also just push ENTER if you want
+to accept TermTA's default direction. The default direction is the leftmost
+direction displayed on the "Exits:" line.
+
+Ex:  Exits: s,sw,e,u
+
+The default for the above is "S". So no need to type S, just hit ENTER.
+
+This is a really fun feature. Just see how far your character can travel
+while killing along the way. In my first attempt with it.. I travelled from
+Town 1 all the way to Flagstones. All done by itself.
+
+---------------->>>>>>>>  F7 - AUTO RESTORE  <<<<<<<<<<--------------------
+
+Auto Restore when ON, detects when your Hungry, Thirsty, or Poisoned.
+If hungry, it'll will eat food automatically (as long as you have the items
+in your possession). By default, when thirsty you drink water, when
+poisoned you will drink Verbena. However, using F2 you can configure TERMTA
+to use spells for restoring if your character has those abilities.
+
+---------------->>>>>>>>  F8 - AUTO REROLL <<<<<<<<<<<------------------
+
+Just starting a new character? You'll love how easy this feature rerolls
+for you. Simply enter the minimum stats you will accept and TermTA rerolls
+for you until it finds stats that meet your minimum requirements.
+
+So sit back and watch some TV while TermTA rerolls for you and gets you
+the best character with the least amount of hassle.
+
+If you're like most folks, you're probably wondering what's the best stats
+for your character. What stats should you try to achieve. With TermTA its
+no problem as you can quickly find out the highest stats possible for
+your character in each of the 6 categories. To do this.. do a short test
+reroll first. Start it by specifying some incredibly high stats. Let it
+reroll about 10 times. TermTA will display the highest stats possible.
+
+I don't know how long, or if it's even possible, to roll a character with 
+the maximum stats in each area. So I suggest you try for stats that are
+-1 or -2 from max in a few areas and maybe -4 or -5 in the other areas.
+Or maybe take off 3 points of the max for all areas and see what you can
+come up with.
+
+The nice thing about using TermTA for rerolling is that you can reroll
+as long as you have time on the BBS. So if you have unlimited time..
+go for near max stats and reroll for 23 hours at a time (BBS usually
+shut down for maintenance 1 hour per day). TermTA can be configured to
+log you off the BBS when done so you don't need to be at the keyboard
+for these long sessions. Do it while you sleep!!
+
+WARNING!  I'd hate to see your new maxed out character die after a full
+          day of rerolling because you weren't at the keyboard and you
+          got thirsty. So I recommend that before you start your reroll
+          process, test the feature first to make sure it logs off
+          correctly. Different BBS's have different ways. That's why I
+          included 3 different ways to get out of TA when done.
+          To run a test, just enter some low stats. Stats that can be
+          hit on the first reroll and then see what happens when reroll
+          ends. If all works fine then start your reroll. If not, run
+          another test on one of the other methods. Dropping carrier works
+          on all systems except I'm unsure if all systems will save your
+          new stats when you exit this way.
+
+WARNING!  It has been brought to my attention that some games of TA have
+          a rest in them that will keep you from rerolling to quickly.
+          Because of this, when starting the REROLL feature you are given
+          a prompt asking what the delay is on your BBS. Simply enter the
+          number of seconds here. If you enter an amount of time that is
+          too long or too short, then restart the REROLL feature to specify
+          another delay.
+
+---------------->>>>>>>>  F9 - AUTO ATTACK  <<<<<<<<<<<------------------
+
+When Auto Attack is ON, TermTA will launch your attack sequence against
+the monster in any room you enter, or if a monster arrives in your area.
+Excellent way to defend yourself or for launching offensive maneuvers.
+
+For this to work effectively, you need to configure your attack sequence
+using TermTA's F2 (Config Menu). You can have it attack with weapons,
+magic, or spells.
+
+In order for TermTA to attack, it needs to recognize the monster to be
+attacked (area spells don't need to worry about this). To handle this,
+TermTA comes with a built-in database of the 13 most common monsters in TA.
+
+* Registered users get the complete Monster Database of over 60 monsters.
+  In addition, this database can be modified so the user can add more
+  monsters in the event of new TA releases or if your Sysop configures new
+  monsters for your game.
+
+The Auto Attack feature allows you to monitor your health while in combat.
+To do that.. specify "HE" or "GR" on the Auto Attack Menu. If you wish to
+use Auto Heal while in Auto Attack mode, then make sure to specify "HE"
+as that is the only display TermTA uses at this time (since it is the only
+one to show Vitality and Mana).
+
+SPECIAL NOTES ON USING AREA SPELLS:
+
+* When using Auto Attack, TermTA senses which monster is in the room and
+  automatically adds the monsters name to the end of your attack command.
+
+  When using an area spell as one of your attack commands, you don't want
+  the monsters name added to the end of the command. So you need a way to
+  inform TermTA the command it is about to issue is an area spell. To
+  specify an area spell, just add a "*" to the beginning of the command.
+
+Example:  You want to cast an attack spell at a monster. On the Attack Menu
+          type in: C KAMAKAZI. TermTA automatically sends C KAMAKAZI <name>.
+          
+          If KAMAKAZI was an area spell, then the above would not work. So
+          therefor, on the Attack Menu you would type: *C KAMAKAZI. TermTA
+          would then only send "C KAMAKAZI" and thus would work effectively.
+
+* One more thing about using area spells with TermTA. TermTA has a built-in
+  safety lock. When you use Auto Attack (F9 - which runs the attack sequence
+  specified on the Attack Menu) to fire off area spells, it will first check
+  to see if there are any VISIBLE players in the room that are not part of
+  your group. If it finds such a player, it will not fire the area spell. If
+  all is clear.. BOOM it shoots. Thus you can't kill innocent players with it
+  (unless you want to - see next paragraph).
+
+  If you do want to kill innocent players with your area spells.. I suggest
+  you use the Macro Menu (F1) to create yourself an area spell macro. Then
+  run that macro manually when needed using the ALT key it is assigned to.
+
+  OR.. if you are a registered user.. you can add players names to your
+  "hit list". If those players are encountered, TermTA will treat them just
+  like a monster and your area spell will fire.
+
+* When using an area spell, it must be configured to be your first attack
+  command in your attack sequence (or round). Say you get 6 attacks per
+  round (sequence) and you want to use an area spell, then your attack
+  sequence may look like this:
+                       
+                     1 -    Cast Area Spell
+                     2 -    Attack
+                     3 -    Attack
+                     4 -    Attack
+                     5 -    Use Rod
+                     6 -    Attack
+  
+  TermTA will work in the following manner:
+  If safe to fire area spell, TermTA launches: 1,2,3,4,5, and 6
+  If not safe, TermTA launches: 2,2,3,4,5, and 6
+
+  So you see.. if it is not safe to area, then the command in slot 2 will
+  be substituted for what's in slot 1. This way you always get your 6
+  attacks per round.
+
+  Now it's also possible to use an attack spell as a substitute in case
+  the area spell is bypassed. Since you get one spell per round, you may
+  as well use an attack one if you can't use the area. Won't go into the
+  details here how to do it, just play with your Attack Menu (F2) and I'm
+  sure you will figure it out.
+
+---------------->>>>>>>>  F10 - AUTO HEAL  <<<<<<<<<<<------------------
+
+Auto Heal when ON, will restore your vitality and your Mana. By default it
+will drink an Anemone potion when you lose 60 vitality points, or drink a
+Yarrow when your Mana falls to 0.
+
+However you can configure these figures to what ever you want.. like 
+casting Kusamotu, or perhaps drinking a Zary instead. You can also configure when you want to heal yourself rather then using the 60 default points.
+See more about this under the "F2 - Config Menu" above.
+
+SPECIAL NOTE on Auto Heal:  This feature works by reading the "HE" display.
+Whenever you enter "HE" it will run a check to see if you need healing.
+You can also use Auto Heal while in Auto Attack mode. Just make sure to
+specify the "HE" command (default setting) on the Attack Menu (F2).
+
+
+----------------->>>>>>>>  <CTRL> KEYS  <<<<<<<<<<<--------------------
+
+In addition to "F" keys, TermTA has 13 keys assigned for running other
+features.
+
+<CTRL> L, S, I, E, G, AND X  displays your stats and other items of
+interest. By using these keys, you can save yourself some typing.
+
+<CTRL> D  Will shell you to DOS if needed
+
+<CTRL> B  Will display the scrollback buffer in case something you need
+to see has already scrolled off the screen.
+
+<CTRL> A  Brings up the BBS phone numbers in your dialing list. Useful
+if you want to dial/redial a BBS.
+
+<CTRL> C  With this you can easily save a playing session to disk in a
+text file. Simply enter the name for the file and MMTERM automatically
+adds an extension of .CAP.
+
+If the file doesn't exist, it will be created. If a file with the same name
+exists, you will have the option of overwriting it (erases old file) or not
+(in which case the new info is added to the end of the old file).
+
+<CTRL> K  Here you can easily display all the spells in your book. BUT,
+with TermTA you get an added bonus that TeleArena doesn't give you. All of
+the spells in your Spell Book come with a description. Now you'll never
+forget what each spell does.
+
+<CTRL> F  When in a shop, use this to display the items for sale.
+
+<CTRL> P  Here you can find commands that work in TA and other useful
+information about the game. Works online or off.
+
+***************************************************************************
+If the program doesn't work
+
+If you have trouble getting this program to run properly,  check this
+document. Chances are you will find information to help
+you there. If you can't find the solution to your problem in the document
+feel free to contact me at the places listed below.
+
+   VOICE: (310) 924-4184
+    MAIL: 11955 209th St, Lakewood, CA 90715
+     BBS: TA conferences on MajorNet
+INTERNET: wboyett@annex.com
+MAJORNET: Will Boyett@ANX
+  TELNET: 204.74.67.1
+
+ SUPPORT BBS: 1-213-227-7127  or  1-213-221-0127
+              Log on with this name: *Willy Boy Software
+              for instant access. 6 lines, supports all modems.
+              NOTE: You can also set up your own account here, but you can't
+                    d/l files on the first call.
+
+              1-818-779-5600
+              Log on with the name: BOYETT
+              Instant access for d/l. 100+ phone lines.
+
+LATEST INFO ON THE LATEST RELEASES
+
+Internet users can:  Finger TERMS@bbs.annex.com
+
+***************************************************************************
+
+That's all there is to it. Happy hunting, and I hope it helps add to your
+personal arsenal of tools for TeleArena. If you should have any suggestions
+or ideas about TermTA, or if you find a bug drop me a line.
+
+TermTA has a long way to go before it becomes the Ultimate Term. I can only
+do it with your support. So please, join the TermTA family and help make
+this term the best it can be.
+
+Will Boyett
+

@@ -1,0 +1,41 @@
+What's New in 3.1
+  *  Some folks with strange video cards where getting garbled text
+     displays in SETUP.EXE. This has now been corrected.
+
+What's New in 3.0
+  *  New Auto Roam feature that moves your character about for you.
+  *  When fighting in groups, TermTA can share all gold found automatically.
+  *  Configurable to automatically restore Mana if needed.
+  *  A whole new look to the interface.
+  *  Improved dialing abilities.
+  *  Can now use the mouse for running the ALT key macros.
+  *  More features assigned to CTRL keys
+  *  If playing in version 5.5 of TA can now have exits displayed
+     automatically every time you move. No need to look at maps as much.
+
+Whats New in 2.1
+  *  Compatible with 5.0 and the new TA 5.5.
+  *  Added SETUP.EXE for easy configuring of modem.
+  *  Can now use TermTA to dial into and log onto a BBS.
+
+Whats New in 2.0
+  *  Can now maintain more then 1 configuration file. For those folks
+     who play TeleArena on more then 1 BBS.
+  *  Added new script command DROPC that will drop carrier when used in
+     a macro. Great for escaping from a deadly situation.
+  *  Removed "Toggle Global" feature since most BBS's no longer allow
+     that in TA.
+  *  Added GR display by clicking mouse or single key entry.
+  *  Now keeps track of the highest stats found for your character when
+     rerolling. Use this as guide as to what stats you should try for.
+  *  When running a lengthy reroll session, you may not be at keyboard
+     when stats are found. Now you can configure TermTA to Log Off, Exit
+     TA, Stay in TA, or Drop Carrier when done rerolling. This will
+     save your new character from dying of thirst if left unattended too
+     long in TA.
+  *  Now you can configure TermTA to heal you automatically when wounded.
+     No more being slow at typing, no more dieing because you hit the 
+     wrong macro. Can heal with items or spells.
+  *  New Script commands and macros for use in finding invisible players.
+  *  Ability to use spells for Auto Restore in the unregistered version
+     of TermTA.
